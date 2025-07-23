@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mi presentación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/moon.css" id="theme">
+  <style>
+    section h2, section h3 {
+      font-size: 80%;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>Codex</h2>
+        <p>Experiencia usando Codex</p>
+      </section>
+
+      <section>
+        <h3>¿Qué es Codex?</h3>
+        <blockquote>
+          <p>"Es una IA que sugiere código."</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h3>Para que lo usé</h3>
+        <p class="fragment">Tareas no priorizadas</p>
+        <p class="fragment">Corrección de errores</p>
+        <p class="fragment">Desarrollo</p>
+      </section>
+
+      <section>
+        <h3>Tareas no priorizadas</h3>
+        <p>
+          No es un problema que impida que una operación se finalice o una tarea que impida cumplir con las metas planificadas.
+        </p>
+      </section>
+
+      <section>
+        <blockquote>
+          Los dos últimos correos de felicitación de cumpleaños utilizaron la misma imagen y el mismo texto para felicitar a distintos usuarios.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3>Tareas sin prioridad</h3>
+        <p>Enviar tarea a cola de backlog</p>
+        <p>¿ Codex nos puede ayudar ?</p>
+      </section>
+
+      <section>
+        <h3>Prompt</h3>
+        <p class="fragment">
+          Es necesario modificar el <i>comando `birthday`</i> que envía correos.
+          <i>Actualmente selecciona imágenes y textos al azar</i> para el cuerpo del mensaje. 
+          Debe cambiarse para que <i>utilice una imagen y un texto por turno, de forma secuencial</i>.
+          Al terminar la lista, debe reiniciar desde el principio.
+        </p>
+      </section>
+
+      <section>
+        <h3>Corrección de errores</h3>
+        <blockquote class="fragment">Se cae al buscar un reporte</blockquote>
+        <p class="fragment">Es urgente!! ¿ Codex nos puede ayudar ?</p>
+      </section>
+
+      <section>
+        <h3>Prompt</h3>
+        <p class="fragment">
+          El módulo de pagos nos registra en el log de sistema un error:
+        </p>
+        <textarea cols="80" rows="20" class="fragment">
+          [2025-04-01 18:00:44] local.ERROR: Unknown or bad timezone (UTC-4) {"exception":"[object] (Carbon\\Exceptions\\InvalidTimeZoneException(code: 0): Unknown or bad timezone (UTC-4) at /home/asterion/source/api/vendor/nesbot/carbon/src/Carbon/CarbonTimeZone.php:114)
+          [stacktrace]
+          #0 /home/asterion/source/api/vendor/nesbot/carbon/src/Carbon/Traits/Date.php(957): Carbon\\CarbonTimeZone::instance()
+          #1 /home/asterion/source/api/vendor/nesbot/carbon/src/Carbon/Traits/Date.php(1854): Carbon\\Carbon::safeCreateDateTimeZone()
+          #2 /home/asterion/source/api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(225): Carbon\\Carbon->setTimezone()
+          #3 /home/asterion/source/api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1240): Illuminate\\Foundation\\Console\\Kernel->terminate()
+          #4 /home/asterion/source/api/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+          #5 {main}
+        </textarea>
+      </section>
+
+      <section>
+        <h3>Beneficios obtenidos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Beneficio</th>
+              <th>Ejemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ahorro de tiempo</td>
+              <td>Soluciones eficientes en minutos</td>
+            </tr>
+            <tr>
+              <td>Mayor concentración</td>
+              <td>Menos cambios de contexto</td>
+            </tr>
+            <tr>
+              <td>Consistencia en el código</td>
+              <td>Patrones comunes del proyecto</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Limitaciones o advertencias</h3>
+        <ul>
+          <li>No siempre entiende el contexto completo</li>
+          <li>Es necesario revisar el código generado</li>
+          <li>A veces sugiere soluciones poco óptimas</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Consejos para aprovecharlo mejor</h3>
+        <ul>
+          <li>Ser claro y específico al pedir ayuda</li>
+          <li>Usar lenguaje técnico común: refactorizar, SOLID, etc.</li>
+          <li>Ideal para tareas repetitivas o de bajo impacto</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Conclusión y propuesta</h3>
+        <p>¿Me ayudó? Sí</p>
+        <p>¿Vale la pena para el equipo? Sí</p>
+        <p>Propuesta:</p>
+        <p>Probarlo con cualquier idea</p>
+        <p>Compartir las experiencias en el equipo</li>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="../node_modules/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+</html>
